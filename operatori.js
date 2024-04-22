@@ -27,7 +27,7 @@ if (9 % 3 === 0 || 5 % 2 === 0) {
     console.log('ostatak pri cjelobrojnom dijeljenju NIJE 0');
 }
 
-for (i = 0; i <= 10; i++) {
+for (var i = 0; i <= 10; i++) {
     if (i === 0) {
         continue;
     }
@@ -40,3 +40,22 @@ for (i = 0; i <= 10; i++) {
 if (trueFalse !== 'true') {
     console.log('2. q = ' + trueFalse);
 }*/
+
+var trueFalse = !!false == !!true;
+console.log(!!false);
+console.log(!!true);
+console.log('1. ' + trueFalse);
+
+console.log(q || x || y || z);
+
+var num = 6;
+--num;
+console.log(num);
+
+const price = 26.5;
+const taxRate = 0.082;
+
+let totalPrice = price + price * taxRate;
+totalPrice = totalPrice.toFixed(2);
+
+console.log('Total:', totalPrice);
